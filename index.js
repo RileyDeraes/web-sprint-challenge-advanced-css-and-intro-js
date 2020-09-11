@@ -270,20 +270,16 @@ var me = {
 
   console.log(addArtist(artists, me));
 
-/* Task 7: Create a function called lotsOfArt() that takes one argument: 
+/* Task 7: Create a function called lotsOfArt() that takes one argument:  */
 
-    (1) artists array 
+var howMany = prompt("More than how many paintings?") //Lets you choose the amount of paintings.
 
-and returns an array with names of artists who painted more than 100 paintings.
-
-For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
-
-function lotsOfArt(/* Code here */){
-
-  /* Code here */
-
+function lotsOfArt(array) {
+  let newArray = (array.filter(artist => artist.paintings > howMany )); //Filters them based on how much you entered.
+  return newArray.map(artist => artist.name);
 }
 
+console.log(`These artists have painted over ${howMany} paintings: ${lotsOfArt(artists)}`); //Gives you a nice little log.
 
 
 // 🎨🎨 STRETCH 🎨🎨//
