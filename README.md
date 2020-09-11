@@ -23,7 +23,7 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
-    Acessibility on the web is making sure that the website is usable to everyone, including those with seeing/hearing/other impairments. Making sure things are named apprioriately so that if someone uses a screen reader, they don't get confused as to where exactly they are at.
+    - Acessibility on the web is making sure that the website is usable to everyone, including those with seeing/hearing/other impairments. Making sure things are named apprioriately so that if someone uses a screen reader, they don't get confused as to where exactly they are at.
 2. Talk about 3 different things you can do to ensure your website is accessible. 
     - Assigning alt tags to images, to describe what can be seen. (E.g. "Beautiful sunset over city skyline.)
     - Giving divs/sections names that make sense. (Using "sectionAboutBeans" instead of "sectionB".)
