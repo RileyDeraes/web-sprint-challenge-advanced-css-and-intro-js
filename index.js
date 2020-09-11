@@ -253,23 +253,22 @@ function removeArtist(array, index) {
 removeArtist(artists, index); //Repeating this will result in a smaller number. You could replace the var index with a number here.
   
 
-/* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
+/* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨 */
 
-For example, you could add the following information: 
-id: 20,
-name: Your Name Here, 
-years: Your Birth Year - current day,
-genre: Web Design, 
-nationality: Your Nationality Here
-bio: Add 1-2 sentences (or use lorem ipsum) 
-
-At the end, this function should return the new array with information added"*/
-
-function addArtist(/* Code here */){
-
-    /* Code here */
-
+var me = {
+  id: 20,
+  name: "Riley Deraes",
+  years: "1997 - 2020",
+  genre: "Creative Student",
+  nationality: "Belgian",
+  bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. I hope I don't die in 2022. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }
+  
+  function addArtist(array, object){
+     array.push(object);
+     return array[20];
   }
+
+  console.log(addArtist(artists, me));
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
