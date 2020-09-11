@@ -212,34 +212,34 @@ console.log(artists[2].bio); //Bio of the third artist.
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-console.log(`This artists' current name is ${artists[8].name}.`);
+console.log(`This artists' current name is ${artists[8].name}.`); //Logs current name.
 artists[8].name = 'Vincent Van Gogh'; //Changes his name.
-console.log(`Their name is now ${artists[8].name}.`);
+console.log(`Their name is now ${artists[8].name}.`); //Logs changed name.
 
-/* Task 3: Create a function called `getArtistByIndex` that takes two arguments: [Oops I accidentally deleted this lol] */
+/* Task 3: Create a function called `getArtistByIndex` that takes two arguments: */
 
 var index = prompt("Who would you like to access? ID 0 - 19"); //Asks for the ID, so you could use 0 for Amedeo Modigliani.
 
 function getArtistByIndex(array, index) {
-  return `The artist at index ${array[index].id} is ${array[index].name}.`;
+  return `The artist at index ${array[index].id} is ${array[index].name}.`; //Returns the name based on index.
 }
 
-console.log(getArtistByIndex(artists, index));
+console.log(getArtistByIndex(artists, index)); //Logs the name based on the index.
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"] */
 
 function get20s(array) {
-  let newArray = array.filter(function (artist) { 
+  let newArray = array.filter(function (artist) {
     let yearsArray = artist.years.split(' '); //Separates the years, which I need.
-    let deathYear = yearsArray[2]; 
-    let birthYear = yearsArray[0];
+    let deathYear = yearsArray[2]; //When they died, hence deathYear.
+    let birthYear = yearsArray[0]; //When they were born; birthYear.
     return (Number(birthYear) > 1900 && Number(deathYear) < 2000); //Both have to be true, otherwise the list would be way longer.
         }
       )
-    return newArray.map(artist => artist.name);
+    return newArray.map(artist => artist.name); 
   }
   
-  console.log(`Here is the list of all artists who were born and died in the 20th century: ${get20s(artists)}`);
+  console.log(`Here is the list of all artists who were born and died in the 20th century: ${get20s(artists)}`); //A nice little log.
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments: */
 
@@ -261,11 +261,14 @@ var me = {
   years: "1997 - 2020",
   genre: "Creative Student",
   nationality: "Belgian",
-  bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. I hope I don't die in 2022. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." }
- 
+  bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. I hope I don't die in 2022. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "wikipedia": "https://en.wikipedia.org/wiki/Belgian_Americans",
+  "paintings": 0
+} //Lots of info!
+
 function addArtist(array, object) {
-     array.push(object);
-     return array[20];
+     array.push(object); //Adds me to the end of the array.
+     return array[20]; //I'm number 20, and we want to return me.
 }
 
 console.log(addArtist(artists, me));
